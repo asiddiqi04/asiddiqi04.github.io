@@ -1,0 +1,326 @@
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:500'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: #24252A; */
+    background-color: #FEFCFB;
+    font-family: "Montserrat";
+}
+
+li, a, button{
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 16px;
+    color: #ecf0f1;
+    
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px, 10%;
+    margin: 2%;
+    background-color: transparent;
+    background-color: #0A1128;
+    
+}
+
+#header {
+    background-color: #0A1128;
+    padding: 20px ;
+    
+}
+
+
+
+.logo {
+    cursor: pointer;
+    background-color: transparent;
+    
+}
+
+.logo a{
+    font-size: xx-large;
+    font-weight: 800;
+    background-color: transparent;
+}
+
+
+.nav_links{
+    list-style: none;
+    background-color: transparent;
+}
+
+nav{
+    background-color: transparent;
+}
+
+.nav_links li{
+
+    display: inline-block;
+    padding: 0px, 20px;
+    margin-left: 30px;
+    background-color: transparent;
+    
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+    background-color: transparent;
+}
+
+.nav_links li a:hover{
+    color: #0088a9;
+}
+
+.nav_buttons{
+    background-color: transparent;
+}
+.nav_buttons a{
+    background-color: transparent;
+}
+
+.nav_buttons button{
+    padding: 10px 25px;
+    /* 0C596E */
+    /* background-color: rgba(0, 136, 169, 1); */
+    background-color: #0C596E;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-right: 5px;
+    
+}
+
+.nav_buttons button:hover {
+    background-color: #06303b;
+}
+
+
+
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+    margin-bottom: 100px;
+    
+
+}
+
+.welcome h1{
+    color: #0A1128;
+}
+
+.welcome img {
+    margin-top: 10px;
+    /* width: 30%;
+    height: 30%; */
+    width: 50%;
+    height: auto;
+    border-radius:50%;
+    margin-left: 150px;
+    margin-right: 100px;
+    
+    border: 5px solid #034078;
+    
+}
+
+.welcomeText{
+    /* color: #ecf0f1; */
+    color: #001F54;
+    margin-right: 20%;
+    text-align: justify;
+}
+
+.WT2_CTA {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 1500px; */
+
+    display: flex;
+    flex-direction: column; /* Ensure vertical stacking */
+    align-items: center;    /* Center items horizontally */
+    justify-content: center; /* Center items vertically if needed */
+    max-width: 1500px;
+    /* margin: 0 auto;  */
+    margin-bottom: 200px;
+    margin-top: 200px;
+}
+
+.WT2_CTA img{
+    width: 50%;
+    height: auto;
+    border-radius: 10%;
+    border: 5px solid #034078;
+    margin-top: 10px;
+    
+}
+
+.WT2_CTA button{
+
+    padding: 10px 25px;
+    /* 0C596E */
+    /* background-color: rgba(0, 136, 169, 1); */
+    background-color: #0C596E;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 10px;
+    
+}
+
+.WT2_CTA button:hover {
+    background-color: #06303b;
+}
+
+  
+
+.container {
+    /* margin-left: 150px;
+    margin-right: 150px; */
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    /* color: #ecf0f1; */
+    color: #001F54;
+    align-items: center;
+    text-align: justify;
+}
+
+.container p{
+    font-size: larger;
+    line-height: 200%;
+    margin-bottom: 5%;
+  }
+
+.container img{
+    width: 70%;
+    height: auto;
+    display: flex;
+    
+
+}
+
+.bannerImage img{
+    margin-top: 10px;
+    margin-bottom: 5%;
+    border-radius: 0px;
+    width: 100%;
+  }
+
+  .xpImages{
+    display: block;
+    text-align: center;
+    
+  }
+  
+  .xpImages img{
+    margin-top: 2%;
+    width: 100%;
+    border-radius: 50px;
+    margin-bottom: 5%;
+    border: 5px solid #034078;
+  }
+  
+
+  .image-button {
+    position: relative;
+    display: inline-block;
+    width: 50%; /* Image button width as percentage */
+    max-width: 600px; /* Limit maximum width for better layout */
+    margin: 10px auto; /* Add space and center it */
+    text-decoration: none;
+}
+
+.image-button img {
+    width: 100%; /* Fully responsive */
+    height: auto;
+    display: block; /* Ensure consistent layout */
+    border-radius: 10%; /* Rounded corners */
+    border: 5px solid #034078; /* Matches the theme */
+    transition: filter 0.3s ease-in-out; /* Smooth darkening effect */
+}
+
+.image-button .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FEFCFB; /* Better contrast for darkened image */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+    padding: 10px 20px; /* Add padding for better readability */
+    border-radius: 5px; /* Optional: Rounded corners for the background */
+}
+
+.image-button:hover img {
+    filter: brightness(50%); /* Darken the image */
+}
+
+.image-button:hover .hover-text {
+    opacity: 1; /* Show text on hover */
+}
+
+
+.educationInfo {
+    
+    margin-left: 20%;
+    margin-right: 20%;
+
+    
+}
+
+
+
+.educationInfo p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.educationInfo h2{
+  color: #001F54;
+}
+
+.major {
+    font-weight: bold;
+}
+
+.university {
+    font-style: italic;
+}
+
+.dates {
+    color: black;
+}
+
+.courseInfo li{
+    font-size: large;
+    color: #001F54;
+    font-weight: 400;
+}
+
+.courseInfo ul{
+    margin-left: 20px; /* Indent lists inside a container */
+    padding-left: 20px;
+}
+
+.courseInfo{
+    margin-bottom: 20%;
+}
