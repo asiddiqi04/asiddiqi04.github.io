@@ -149,12 +149,16 @@ nav{
 
     display: flex;
     flex-direction: column; /* Ensure vertical stacking */
-    align-items: center;    /* Center items horizontally */
-    justify-content: center; /* Center items vertically if needed */
-    max-width: 1500px;
+    align-items: center;    
+    /* Center items horizontally */
+    justify-content: center; 
+    /* Center items vertically if needed */
+    max-width: 1920px;
     /* margin: 0 auto;  */
     margin-bottom: 200px;
     margin-top: 200px;
+
+    
 }
 
 .WT2_CTA img{
