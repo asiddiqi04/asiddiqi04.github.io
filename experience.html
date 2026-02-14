@@ -7,102 +7,121 @@
     <title>Work Experience</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="experience-page">
     
     <div id = "header">
         <header>
+            <div class="logo"><a href="index.html">Adil Siddiqi</a></div>
             
-            
-                <div class="logo"><a href="index.html">Adil Siddiqi</a></div>
-                
-                <nav>
-                    <ul class="nav_links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="experience.html">Experience</a></li>
-                        <!-- <li><a href="projects.html">Projects</a></li> -->
-                        <li><a href="education.html">Education</a></li>
-                    </ul>
-                </nav>
-    
-                
-                <div class="nav_buttons">
-                    <a href="https://github.com/asiddiqi04"><button>GitHub</button></a>
-                    <a href="https://www.linkedin.com/in/adil-siddiqi-20789b2a9/"><button>LinkedIn</button></a>
-                </div>
-                
-            
-            
-        </header>
-        </div>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="education.html">Education</a></li>
+                </ul>
+            </nav>
 
-    <div id="experiencePage">
+            <div class="nav_buttons">
+                <a href="https://github.com/asiddiqi04" target="_blank" rel="noopener noreferrer"><button>GitHub</button></a>
+                <a href="https://www.linkedin.com/in/adil-siddiqi-20789b2a9/" target="_blank" rel="noopener noreferrer"><button>LinkedIn</button></a>
+            </div>
+        </header>
+    </div>
+
+    <main id="experiencePage" class="page-shell">
 
         <div class="bannerImage">
-            <img src="truck3.png" alt="Quarry">
+            <img src="experience-banner.png" alt="Abstract technology banner">
         </div>
 
-        <div class="container">
-            <h2>Work Term 1 - BI Analyst @ Lafarge Canada Inc.</h2>
-            <h3>May 2024 - August 2024</h3>
-            <p>Over the past four months, I’ve had the pleasure of working at Lafarge Canada in the Data Integration and Transformation department as a Business Intelligence Analyst. During this time, I’ve worked on a variety of projects that have sharpened my programming and problem-solving skills. My experience at Lafarge has also given me valuable exposure to the Materials and Construction industry. I’ve gained a deeper understanding of their products, such as aggregates and concrete, through site visits to the Dundas quarry in Hamilton and the Innovation Lab in Toronto.</p>
-            
-            <h3>Projects</h3>
-            <div class="xpImages">
-                <img src="coding.jpg" alt="coding stock image">
-            </div>
+        <div class="container experience-layout">
+            <section class="experience-summary">
+                <h2>Work Experience</h2>
+                <p>Software Engineering co-op focused on full-stack development, automation, and data systems that improve operational speed, reliability, and business decision-making.</p>
+            </section>
 
-            <p>Throughout my term, I’ve had the opportunity to work on different projects with different tools such as Google Apps Script, Google AppSheet, and Looker Studio. My first project I was introduced to was a data normalization task where I had to normalize historic report data for the site visits of concrete plants. I utilized Google App Script to develop a script which would take all the historic data from the CSV file it was stored in and then normalize each row of data and link it with a master key. This project helped me improve my problem solving skills since I had to develop an algorithm to dynamically assign keys in order to normalize the data. This solution enabled us to process over 2,000 records across multiple sheets, significantly improving data consistency and eliminating manual intervention. By ensuring a clear data structure, I helped the team retrieve information more efficiently and generate more accurate reports.</p>
+            <section class="impact-grid" aria-label="Impact highlights">
+                <article class="impact-card">
+                    <h3>$100K</h3>
+                    <p>Annual savings from carrier compliance automation at Lafarge.</p>
+                </article>
+                <article class="impact-card">
+                    <h3>200%</h3>
+                    <p>Faster document processing through AI-powered ETL workflows.</p>
+                </article>
+                <article class="impact-card">
+                    <h3>80%</h3>
+                    <p>Reduction in manual audits via Apps Script compliance integrations.</p>
+                </article>
+                <article class="impact-card">
+                    <h3>2K+</h3>
+                    <p>Compliance records validated through SQL and automation pipelines.</p>
+                </article>
+            </section>
 
-            <p>The second project I worked on was automating the Concrete Plant Safety Checklist. I developed two scripts using Google Apps Script to automate the verification process for daily and monthly safety checklists across concrete plants in Eastern Canada. These scripts ensured compliance by sending timely reminder emails to concrete batchers when checklists were not submitted on time. Additionally, I implemented escalation notifications that alerted supervisors and managers if submissions were not completed within two days. This automation significantly improved operational efficiency and accountability within the plant's workflow, ensuring consistent adherence to safety protocols. Through this project, I leveraged skills in Google Apps Script, workflow automation, and workplace safety.</p>
-            <p>The third scripting project I am working on is still in progress and it is a multi-use document processing script that leverages the help of Google’s Gemini API. Since Lafarge is the largest manufacturer of building materials in Canada, they receive lots of external testing results from third party companies that test their products. Each company has a different format for their reports and since there are quite a few testing companies there needs to be a dynamic way to process these reports in a timely manner. So far I have developed a custom Google Apps Script to automate the extraction and processing of test result data from PDF documents using Google's Gemini API and OCR technology. Parsed the JSON output into structured arrays and automated the insertion of data into Google Sheets, streamlining data entry and improving accuracy for over 3,000 documents. This project introduced me to the concept of REST APIs and has helped me better understand how to integrate different technical tools together. This project also helped me learn how to navigate complex and limited documentation and implement effective solutions.</p>
+            <section class="role-grid" aria-label="Roles and achievements">
+                <article class="role-card">
+                    <h3>Full-Stack Software Developer (CO-OP)</h3>
+                    <p class="role-company">TextNow <span>Waterloo, Ontario</span></p>
+                    <p class="role-dates">January 2026 - Present</p>
+                    <ul>
+                        <li>Architected cross-platform AI feedback ingestion pipelines using n8n and JavaScript to capture real-time user sentiment from Slack and Jira bots.</li>
+                        <li>Implemented a secure Model Context Protocol (MCP) connection between local IDEs and automation platforms, reducing time-to-prototype for internal workflows.</li>
+                        <li>Implemented HMAC signature verification for webhook authentication to ensure secure and reliable service-to-service communication.</li>
+                        <li>Authored technical documentation and how-to guides in Confluence, enabling faster team adoption of new automation tooling.</li>
+                    </ul>
+                </article>
 
-            <h3>Site Visits</h3>
-            <div class="xpImages">
-                <img src="dundas.png" alt="">
-            </div>
-            <p>In June I had the opportunity to visit Lafarge’s Dundas quarry, which is the largest aggregate quarry in Canada. This main product of the site is limestone which is blasted and then sent to the crusher which then grinds the stone into different sizes which are then used in different construction projects. Visiting the site taught me a lot about Lafarge and helped me understand the business better. In July I visited Lafarge’s innovation and training center (ITC) in Toronto. At the ITC lab Lafarge designs and tests new concrete mixes which eventually make their way onto our roads and buildings. My visits to the sites allowed me to see a side of the business that I have never been exposed to and allowed me to gain a broader perspective on how other people work. My visits to the sites also makes it much easier to generate ideas that could help improve the workflow of colleagues who work on site. These visits have been integral to helping me understand the business.</p>
+                <article class="role-card">
+                    <h3>Junior Web Developer (Part-Time)</h3>
+                    <p class="role-company">Lafarge Canada Inc. <span>Mississauga, Ontario</span></p>
+                    <p class="role-dates">January 2025 - April 2025</p>
+                    <ul>
+                        <li>Designed and deployed a cloud-based carrier compliance platform that saved approximately $100K annually through automated document expiry validation.</li>
+                        <li>Implemented SQL validation pipelines and Google Apps Script automations across 2,000+ compliance records, improving system reliability and data accuracy.</li>
+                        <li>Collaborated with logistics and operations stakeholders under Agile workflows to gather requirements and deliver iterative backend and frontend updates.</li>
+                        <li>Improved compliance visibility and reduced follow-up effort with automated reminders and status tracking workflows.</li>
+                    </ul>
+                </article>
 
-            <h3>Reflections - WT1</h3>
-            <p>My time at Lafarge Canada has been an invaluable learning experience, both professionally and personally. I’ve had the opportunity to immerse myself in the materials and construction industry, a field I had little knowledge of prior to this internship. Gaining insight into the processes behind products like concrete and aggregates has given me a newfound appreciation for the complexity and importance of this industry.</p>
+                <article class="role-card" id="WT2">
+                    <h3>Business Intelligence Analyst (CO-OP)</h3>
+                    <p class="role-company">Lafarge Canada Inc. <span>Mississauga, Ontario</span></p>
+                    <p class="role-dates">May 2024 - December 2024</p>
+                    <ul>
+                        <li>Developed an AI-powered ETL pipeline in Python using Gemini API to process thousands of unstructured reports, increasing processing speed by 200%.</li>
+                        <li>Built SQL pipelines and backend scripts to visualize adoption, data velocity, and usage metrics across tools using Looker Studio and Power BI.</li>
+                        <li>Integrated Apps Script automations with compliance systems, reducing manual audits by 80% and improving real-time operational accuracy.</li>
+                        <li>Worked directly with on-site teams through visits to Dundas Quarry and the Toronto ITC lab to align tooling with real operational workflows.</li>
+                    </ul>
+                </article>
+            </section>
 
-            <p>One of the most rewarding aspects of my time at Lafarge has been the development of my interpersonal skills. Working in a professional environment has sharpened my ability to communicate clearly and collaborate effectively with team members. I've also grown more confident in working independently, taking ownership of my projects, and ensuring they meet the needs of the team.</p>
-            <p>From a technical perspective, my skills have advanced significantly. I’ve had hands-on experience with tools like Google Apps Script, AppSheet, and Looker Studio, each of which has enhanced my ability to automate processes and create data-driven solutions. The exposure to these platforms has deepened my understanding of how to apply programming knowledge to real-world business challenges.</p>
-            <p>Perhaps the most valuable lesson I’ve learned is the importance of designing maintainable and adaptable solutions. In contrast to university assignments, where once a project is submitted it's seldom revisited, my work at Lafarge requires me to consider long-term usability. My code must be clear, maintainable, and scalable, as I often need to revisit it for revisions or adjust it to meet evolving business requirements. This has fundamentally changed how I approach problem-solving, pushing me to think beyond immediate outcomes and focus on sustainable, long-term solutions.</p>
-            <p>Overall, my experience at Lafarge has not only improved my technical and interpersonal skills but has also provided me with a deeper understanding of how to apply software engineering principles in a business context. It has been a highly rewarding chapter in my professional journey, and I’m eager to carry these lessons forward into future roles.</p>
-
-
-            <h2 id="WT2">Work Term 2 - BI Analyst @ Lafarge Canada Inc.</h2>
-            <h3>September 2024 - December 2024</h3>
-            <p>This role marked the continuation of my first work term at Lafarge Canada as part of an 8-month co-op contract. Over the past months, I have had the opportunity to build upon my earlier projects, take on new challenges, and further refine my technical and analytical skills. As a Business Intelligence Analyst, I contributed to streamlining operations, enhancing data accessibility, and supporting key business decisions.</p>
-
-            <h3>Key Accomplishments</h3>
-            <p><strong>Improving the PDF Results Processor Tool:</strong> During my time at Lafarge, I enhanced the document processing system by integrating Python and the Camelot OCR library. This improvement significantly elevated the tool’s performance and adaptability, allowing me to streamline the extraction and structuring of testing results from diverse PDF formats. With this upgrade, I was able to process over 3,000 documents more efficiently and accurately, reducing manual intervention and errors. By leveraging Python’s versatility and Camelot’s advanced capabilities, I overcame the limitations of the original implementation, creating a more robust and scalable solution.</p>
-            <p><strong>Building the Carrier Compliance App:</strong> One of my most rewarding projects was designing and building a carrier compliance app using Google AppSheet. I began by designing a relational database that connected carriers, drivers, and their compliance records, ensuring data consistency and clear linkages. Working closely with stakeholders, I translated their business requirements into a functional and user-friendly app. This process involved frequent collaboration to align technical solutions with operational needs. The app streamlined workflows, improved data visibility, and enhanced communication across departments. This project allowed me to demonstrate my ability to design scalable systems and deliver impactful solutions that bridged the gap between technical development and business operations.</p>
-            <p><strong>Deploying the Safety Plant Checklist System:</strong> I successfully deployed the Safety Plant Checklist system across all of Eastern Canada, which was a significant step towards improving compliance and operational efficiency. I automated the verification process for daily and monthly safety submissions using Google Apps Script, integrating timely reminders and escalation notifications to ensure adherence to safety protocols. This deployment standardised safety practices across multiple plants, reduced oversight gaps, and improved accountability. It was incredibly fulfilling to see the impact of this system on ensuring consistent compliance and operational reliability.</p>
-
-            <h3>Reflections - WT2</h3>
-            <p>Looking back at the past four months, I can confidently say this experience has been transformative, both professionally and personally. Each of these accomplishments pushed me to step outside my comfort zone and explore new ways of thinking. Early on, I realised that solving complex business problems required not only technical expertise but also the courage to take calculated risks and experiment with innovative solutions.</p>
-            <p>For example, when enhancing the PDF Results Processor Tool, I took the initiative to integrate Python and the Camelot OCR library despite having limited prior experience with OCR technologies. It was a bold move, but one that paid off immensely, as it significantly improved the tool’s efficiency and scalability. This project taught me that taking risks in pursuit of better solutions often leads to substantial growth and rewarding outcomes.</p>
-            <p>Similarly, while building the Carrier Compliance App, I embraced the challenge of designing a relational database from scratch and translating abstract business requirements into actionable technical solutions. The collaborative nature of this project pushed me to actively engage with stakeholders, propose creative ideas, and refine the app iteratively. This experience gave me the confidence to own the process, knowing that my solutions were making a tangible difference in streamlining workflows and enhancing collaboration.</p>
-            <p>The deployment of the Safety Plant Checklist system across Eastern Canada was another pivotal moment. Rolling out a system at this scale required careful planning, adaptability, and the ability to anticipate potential challenges. I learned to trust my skills and instincts, ensuring the system was not only technically sound but also user-friendly and impactful for the teams relying on it daily.</p>
-            <p>What stands out most to me from these four months is how much my confidence in my abilities has grown. I’ve learned to approach problems with a mindset that encourages innovation, even when the path forward isn’t immediately clear. I’ve also gained a deeper appreciation for the value of clear communication and collaboration in turning ambitious ideas into reality. This confidence to take risks and innovate further has fundamentally changed how I approach challenges, and I’m excited to carry these lessons forward into my future roles.</p>
-
-
-
-
-
-
+            <section class="skills-block" aria-label="Technical skills">
+                <h3>Technical Skills</h3>
+                <div class="skills-columns">
+                    <div class="skill-group">
+                        <h4>AI &amp; Automation</h4>
+                        <p>n8n, MCP, Slack API, Jira Automation, RAG Pipelines, Gemini API</p>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Languages &amp; Scripting</h4>
+                        <p>Python, JavaScript/TypeScript, SQL, Bash/Shell, Java, C</p>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Web Development</h4>
+                        <p>React.js, Node.js, FastAPI, HTML5/CSS3, RESTful APIs</p>
+                    </div>
+                    <div class="skill-group">
+                        <h4>DevOps &amp; Tools</h4>
+                        <p>Git/GitHub, Docker, Linux (CLI/SSH), Google Cloud Platform (GCP), AWS</p>
+                    </div>
+                </div>
+            </section>
         </div>
 
-
-
-        <!-- <div id="WT2">
-            <h2>Work Term 2 - BI Analyst @ Lafarge Canada Inc.</h2>
-        </div> -->
-
-
-    </div>
+    </main>
 
 </body>
 </html>

@@ -5,34 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="projects-page">
 
     <div id = "header">
-        <div class="navContainer">
-            <h1 class="logo">Adil Siddiqi</h1>
-            <nav class="navBar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <!-- <li><a href="projects.html">Projects</a></li> -->
-                    <li><a href="education.html">Education</a></li>
-                </ul>
-
-            </nav>
-            <div class="socialIcons">
-                <a href="https://github.com/asiddiqi04" target="_blank">
-                  <img src="gitLogo.png" alt="GitHub" />
-                </a>
-                <a href="https://www.linkedin.com/in/adil-siddiqi-20789b2a9/" target="_blank">
-                  <img src="linkedinLogo.png" alt="LinkedIn" />
-                </a>
-            </div>
+        <header>
+            
+            
+                <div class="logo"><a href="index.html">Adil Siddiqi</a></div>
+                
+                <nav>
+                    <ul class="nav_links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="education.html">Education</a></li>
+                    </ul>
+                </nav>
+    
+                
+                <div class="nav_buttons">
+                    <a href="https://github.com/asiddiqi04" target="_blank" rel="noopener noreferrer"><button>GitHub</button></a>
+                    <a href="https://www.linkedin.com/in/adil-siddiqi-20789b2a9/" target="_blank" rel="noopener noreferrer"><button>LinkedIn</button></a>
+                </div>
+                
+            
+            
+        </header>
         </div>
 
-    </div>
-    
+        <main class="page-shell">
+            <div class="container">
+              <h1>Projects</h1>
+              <p>A couple of things I’m proud of. Open‑source where possible, always learning.</p>
+        
+              <!-- Project 1: GreenScore -->
+              <section class="project-card">
+                <h2>GreenScore <span class="dates">— Hackathon Project</span></h2>
+                <a class="image-button" href="#" target="_blank" rel="noopener">
+                  <img src="BIAnalyst.webp" alt="GreenScore app screenshot placeholder" />
+                  <span class="hover-text">Open Demo / Case Study</span>
+                </a>
+                <p>
+                  Barcode scanner + search that estimates ethical & sustainability scores for consumer products using a RAG pipeline and AI‑assisted scoring. Built with friends during a hackathon.
+                </p>
+                <ul>
+                  <li>React frontend with modern UI + Tailwind; FastAPI backend.</li>
+                  <li>Data sources: UPCItemDB & Open Food Facts; MongoDB persistence.</li>
+                  <li>AI: Gemini for score rationales; vector search for retrieval.</li>
+                  <li>Features: scan/search history, favourites, and an in‑app AI helper.</li>
+                </ul>
+                <div class="nav_buttons project-actions">
+                  <a href="#" target="_blank" rel="noopener"><button>Live Demo</button></a>
+                  <a href="https://github.com/asiddiqi04" target="_blank" rel="noopener"><button>Source</button></a>
+                </div>
+              </section>
+        
+              <!-- Project 2: ShadowBoxer (WIP) -->
+              <section class="project-card">
+                <h2>ShadowBoxer (WIP) <span class="dates">— Personal Fitness App</span></h2>
+                <a class="image-button" href="#" target="_blank" rel="noopener">
+                  <img src="truck.webp" alt="ShadowBoxer app screenshot placeholder" />
+                  <span class="hover-text">Try Prototype</span>
+                </a>
+                <p>
+                  Personal fitness web app that detects punches and tracks combos using webcam pose estimation. Building timed rounds, scoring, and gamified workouts next.
+                </p>
+                <ul>
+                  <li>MoveNet pose detection with TensorFlow.js; real‑time canvas overlay.</li>
+                  <li>Jab detection + counter implemented; combo logic in development.</li>
+                  <li>Responsive UI with Tailwind; Vite build for fast iteration.</li>
+                  <li>Planned: streaks, leaderboards, and coach‑style feedback.</li>
+                </ul>
+                <div class="nav_buttons project-actions">
+                  <a href="#" target="_blank" rel="noopener"><button>Prototype</button></a>
+                  <a href="https://github.com/asiddiqi04" target="_blank" rel="noopener"><button>Source</button></a>
+                </div>
+              </section>
+        
+              <section id="greenscore-notes">
+                <h3>GreenScore — Notes</h3>
+                <p>Architecture diagram, retrieval strategy, and evaluation benchmarks coming soon.</p>
+              </section>
+            </div>
+          </main>
 </body>
 </html>

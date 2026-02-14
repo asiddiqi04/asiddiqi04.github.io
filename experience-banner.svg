@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 720" role="img" aria-labelledby="title desc">
+  <title id="title">Innovative technology themed banner</title>
+  <desc id="desc">Abstract dark gradient background with glowing shapes, data lines, and subtle grid accents.</desc>
+
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07131f"/>
+      <stop offset="48%" stop-color="#0c1d31"/>
+      <stop offset="100%" stop-color="#050b14"/>
+    </linearGradient>
+
+    <radialGradient id="orbBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#67b4ff" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#67b4ff" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="orbTeal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4bd6c8" stop-opacity="0.62"/>
+      <stop offset="100%" stop-color="#4bd6c8" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#74b7ff" stop-opacity="0"/>
+      <stop offset="48%" stop-color="#74b7ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#74b7ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#2b4360" stroke-opacity="0.24" stroke-width="1"/>
+    </pattern>
+
+    <pattern id="gridFine" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M 12 0 L 0 0 0 12" fill="none" stroke="#1f334b" stroke-opacity="0.2" stroke-width="0.6"/>
+    </pattern>
+
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7dbdff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7dbdff" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="720" fill="url(#bgGrad)"/>
+  <rect width="1920" height="720" fill="url(#gridFine)"/>
+
+  <circle cx="390" cy="150" r="240" fill="url(#orbBlue)" filter="url(#softBlur)"/>
+  <circle cx="1520" cy="550" r="250" fill="url(#orbTeal)" filter="url(#softBlur)"/>
+  <circle cx="1050" cy="200" r="180" fill="url(#orbBlue)" filter="url(#softBlur)"/>
+
+  <rect x="0" y="0" width="1920" height="720" fill="url(#grid)"/>
+
+  <g opacity="0.72" stroke-linecap="round" fill="none">
+    <path d="M 120 560 C 300 430, 520 420, 710 500 S 1110 640, 1320 520 S 1680 360, 1860 460" stroke="url(#lineGrad)" stroke-width="3"/>
+    <path d="M 40 340 C 290 260, 470 270, 660 330 S 1020 410, 1260 330 S 1640 220, 1880 300" stroke="#58b8ff" stroke-opacity="0.35" stroke-width="2.1"/>
+    <path d="M 200 640 C 410 530, 650 530, 860 620 S 1220 720, 1460 620 S 1750 480, 1910 560" stroke="#45d0c3" stroke-opacity="0.35" stroke-width="2"/>
+  </g>
+
+  <g>
+    <circle cx="300" cy="515" r="7" fill="#79bcff"/>
+    <circle cx="710" cy="500" r="8" fill="#7ad9cf"/>
+    <circle cx="1015" cy="598" r="6" fill="#79bcff"/>
+    <circle cx="1370" cy="484" r="8" fill="#7ad9cf"/>
+    <circle cx="1680" cy="370" r="7" fill="#79bcff"/>
+  </g>
+
+  <g opacity="0.88" stroke="#89c7ff" stroke-opacity="0.5" stroke-width="1.4" fill="none">
+    <polyline points="1220,118 1380,118 1460,190 1600,190"/>
+    <polyline points="1250,148 1330,148 1420,238 1530,238"/>
+    <polyline points="220,160 400,160 460,230 660,230"/>
+    <polyline points="190,210 360,210 420,270 590,270"/>
+  </g>
+
+  <g>
+    <circle cx="1220" cy="118" r="4.5" fill="#8acbff"/>
+    <circle cx="1460" cy="190" r="4.5" fill="#8acbff"/>
+    <circle cx="1600" cy="190" r="4.5" fill="#8acbff"/>
+    <circle cx="1250" cy="148" r="4" fill="#71ddd0"/>
+    <circle cx="1420" cy="238" r="4" fill="#71ddd0"/>
+    <circle cx="220" cy="160" r="4.5" fill="#8acbff"/>
+    <circle cx="460" cy="230" r="4.5" fill="#8acbff"/>
+    <circle cx="660" cy="230" r="4.5" fill="#8acbff"/>
+    <circle cx="190" cy="210" r="4" fill="#71ddd0"/>
+    <circle cx="420" cy="270" r="4" fill="#71ddd0"/>
+  </g>
+
+  <g opacity="0.78">
+    <rect x="120" y="420" width="210" height="122" rx="14" fill="url(#glass)" stroke="#3b5c80" stroke-opacity="0.45"/>
+    <rect x="360" y="366" width="188" height="108" rx="14" fill="url(#glass)" stroke="#3b5c80" stroke-opacity="0.45"/>
+    <rect x="1220" y="294" width="210" height="122" rx="14" fill="url(#glass)" stroke="#3b5c80" stroke-opacity="0.45"/>
+    <rect x="1460" y="236" width="210" height="122" rx="14" fill="url(#glass)" stroke="#3b5c80" stroke-opacity="0.45"/>
+  </g>
+
+  <g opacity="0.58" fill="#8cc6ff" font-family="monospace" font-size="20">
+    <text x="156" y="472">pipeline.run()</text>
+    <text x="156" y="504">latency &lt; 120ms</text>
+    <text x="392" y="416">sync.ai.feedback()</text>
+    <text x="392" y="446">status: healthy</text>
+    <text x="1254" y="346">deploy --prod</text>
+    <text x="1254" y="376">uptime: 99.9%</text>
+    <text x="1494" y="288">model.context.connect()</text>
+    <text x="1494" y="318">webhook.verify(hmac)</text>
+  </g>
+
+  <rect x="0" y="0" width="1920" height="720" fill="url(#bgGrad)" opacity="0.22"/>
+</svg>
