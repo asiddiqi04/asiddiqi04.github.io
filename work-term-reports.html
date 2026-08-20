@@ -2,358 +2,413 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Term Reports</title>
-    <link rel="stylesheet" href="styles.css?v=20260809">
+    <meta name="description" content="Work term reports by Adil Siddiqi, Software Engineering Co-op at the University of Guelph. Winter and Summer 2026 terms at TextNow.">
+    <title>Work Term Reports | Adil Siddiqi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,600;0,700;0,800;0,900;1,600;1,800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20260819">
 </head>
 <body class="work-term-reports-page">
 
-    <div id="header">
-        <header>
-            <div class="logo"><a href="index.html">Adil Siddiqi</a></div>
-
-            <nav>
-                <ul class="nav_links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="work-term-reports.html">Work Term Reports</a></li>
-                    <li><a href="education.html">Education</a></li>
-                </ul>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">Adil<span> Siddiqi</span></a>
+            <nav class="site-nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="experience.html">Experience</a>
+                <a href="projects.html">Projects</a>
+                <a href="work-term-reports.html" aria-current="page">Work Term Reports</a>
+                <a href="education.html">Education</a>
             </nav>
-
-            <div class="nav_buttons">
-                <a href="https://github.com/asiddiqi04" target="_blank" rel="noopener noreferrer"><button>GitHub</button></a>
-                <a href="https://www.linkedin.com/in/adil-siddiqi-20789b2a9/" target="_blank" rel="noopener noreferrer"><button>LinkedIn</button></a>
+            <div class="header-actions">
+                <a class="icon-link" href="https://github.com/asiddiqi04" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="icon-link" href="https://www.linkedin.com/in/adil-siddiqi-20789b2a9/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
-        </header>
-    </div>
+        </div>
+    </header>
 
-    <main id="workTermReportsPage" class="page-shell">
-        <article class="term-report" id="winter-2026" aria-labelledby="winter-2026-title">
-        <section class="work-term-hero">
-            <div>
-                <p class="eyebrow">Winter 2026 Co-op Term</p>
-                <h1 id="winter-2026-title">Work Term Reports</h1>
-                <p class="hero-summary">This report reflects on my Winter 2026 co-op term at TextNow, where I helped build internal tools, improve employee onboarding, and explore product ideas shaped by customer feedback.</p>
+    <main class="page-shell">
+
+        <section class="page-hero">
+            <p class="eyebrow">University of Guelph Co-op</p>
+            <h1>Work Term Reports</h1>
+            <p class="lede">Two consecutive co-op terms at TextNow on the AI &amp; Internal Tools team. In the first term I shipped my first production system. In the second I led one. Each report covers what I built and what I learned.</p>
+        </section>
+
+        <nav class="term-index" aria-label="Report index">
+            <a href="#summer-2026">
+                <p class="term-tag">S26 · May – August 2026</p>
+                <h2>Summer 2026 at TextNow</h2>
+                <p>Led the build of an employee-onboarding automation platform that replaced a paid SaaS product, and helped define how the team engineers with AI agents.</p>
+            </a>
+            <a href="#winter-2026">
+                <p class="term-tag">W26 · January – April 2026</p>
+                <h2>Winter 2026 at TextNow</h2>
+                <p>Built an end-to-end AI-tools feedback system, contributed to onboarding automation, and pitched a customer loyalty strategy in an innovation challenge.</p>
+            </a>
+        </nav>
+
+        <!-- ============================================================
+             SUMMER 2026 REPORT
+             ============================================================ -->
+        <article class="term-report" id="summer-2026" aria-labelledby="summer-2026-title">
+
+            <section class="report-hero">
+                <div>
+                    <p class="eyebrow">Summer 2026 Co-op Term</p>
+                    <h2 class="report-title" id="summer-2026-title">From Building Tools to Owning Systems</h2>
+                    <p class="lede">My second consecutive term at TextNow. I was invited back to the AI &amp; Internal Tools team and spent the summer leading the build of an employee-onboarding automation platform that replaced a paid SaaS product, and helping establish how our team builds production systems with AI agents.</p>
+                </div>
+                <dl class="term-meta" aria-label="Summer 2026 work term details">
+                    <div>
+                        <dt>Employer</dt>
+                        <dd>TextNow, AI &amp; Internal Tools team</dd>
+                    </div>
+                    <div>
+                        <dt>Role</dt>
+                        <dd>Software Developer Co-op (returning term)</dd>
+                    </div>
+                    <div>
+                        <dt>Term</dt>
+                        <dd>Summer 2026 (May – August)</dd>
+                    </div>
+                    <div>
+                        <dt>Focus</dt>
+                        <dd>Systems integration, workflow orchestration, reliability engineering</dd>
+                    </div>
+                </dl>
+            </section>
+
+            <div class="stat-band" aria-label="Term highlights">
+                <div>
+                    <p class="stat-value">10<em>+</em></p>
+                    <p class="stat-label">Enterprise systems integrated on one platform</p>
+                </div>
+                <div>
+                    <p class="stat-value">42</p>
+                    <p class="stat-label">Git-versioned workflows on the onboarding platform</p>
+                </div>
             </div>
-            <dl class="term-meta" aria-label="Work term details">
-                <div>
-                    <dt>Employer</dt>
-                    <dd>TextNow</dd>
-                </div>
-                <div>
-                    <dt>Role</dt>
-                    <dd>Full-Stack Software Developer Co-op</dd>
-                </div>
-                <div>
-                    <dt>Term</dt>
-                    <dd>Winter 2026</dd>
-                </div>
-                <div>
-                    <dt>Focus</dt>
-                    <dd>Internal tools, process automation, customer research, and product ideas</dd>
-                </div>
-            </dl>
-        </section>
 
-        <section class="report-intro">
-            <h2>Introduction</h2>
-            <p>My goal for this website is to give a clear picture of what I worked on, what I learned, and how the term helped me grow as a software engineering student. I worked at TextNow during the Winter 2026 co-op term as a Full-Stack Software Developer Co-op, contributing to projects that supported internal teams and customer-focused product thinking.</p>
-            <figure class="report-image">
-                <img src="coding.jpg" alt="Laptop workspace representing software development work">
-                <figcaption>Much of my term focused on turning messy operational problems into clearer tools and workflows.</figcaption>
-            </figure>
-        </section>
+            <div class="report-body">
 
-        <section class="report-section">
-            <h2>About TextNow</h2>
-            <p>TextNow is a communications company best known for helping people call and text through an app-based phone service. The company works in an area of computing that connects mobile apps, cloud services, data systems, internal platforms, and customer experience. During my term, I saw how software supports both the product users see and the internal systems employees rely on every day.</p>
-            <p>What stood out to me was the range of problems a software team can touch inside one company. Some work was close to the customer experience, while other work focused on making internal processes faster, clearer, and easier to manage.</p>
-        </section>
+                <section class="report-section prose">
+                    <div class="section-head">
+                        <span class="num">01</span>
+                        <h2>Introduction</h2>
+                    </div>
+                    <p>This report covers my Summer 2026 co-op term at TextNow, my second term in a row on the same team. In the winter I proved I could ship a system end to end. This summer I was trusted to lead one. My primary assignment was Automated Onboarding, a program that replaces a paid third-party SaaS tool with software we own. It covers both IT identity provisioning and HR hire processing.</p>
+                    <p>If the winter term was about learning to build, this term was about learning what it takes to make software <strong>trustworthy</strong>: idempotency, failure isolation, honest metrics, security boundaries, and documentation written for the people who inherit the system after you leave. That thread runs through everything below.</p>
+                </section>
 
-        <section class="report-section">
-            <h2>Goals and Learning Outcomes</h2>
-            <div class="goals-grid">
-                <article>
-                    <h3>Build Useful Internal Tools</h3>
-                    <p>I wanted to improve at building software for real teams, not just for a class assignment. This goal was met through projects where I had to understand how employees worked, what information they needed, and how to make tools fit into existing processes.</p>
-                </article>
-                <article>
-                    <h3>Grow My Automation Skills</h3>
-                    <p>I wanted to learn how companies reduce repetitive work through automation. I made progress on this by working on feedback collection and onboarding workflows that moved information between systems with less manual effort.</p>
-                </article>
-                <article>
-                    <h3>Practice Clear Technical Communication</h3>
-                    <p>I wanted to get better at explaining technical work to people with different backgrounds. This goal became important when writing documentation, presenting product ideas, and turning project details into language stakeholders could understand.</p>
-                </article>
-                <article>
-                    <h3>Connect Software to Business Value</h3>
-                    <p>I wanted to understand how engineering decisions support business goals. The innovation challenge helped me see how customer feedback, product strategy, and implementation planning can come together in one proposal.</p>
-                </article>
+                <section class="report-section">
+                    <div class="section-head">
+                        <span class="num">02</span>
+                        <h2>Goals and Learning Outcomes</h2>
+                    </div>
+                    <div class="goals-grid">
+                        <article>
+                            <h3>Own a production system end to end</h3>
+                            <p>I wanted responsibility for a system's whole life: design, build, testing, security review, documentation, and go-live. Leading the onboarding program gave me exactly that, including credential audits, runbooks, and a manual review process before anything touched production.</p>
+                        </article>
+                        <article>
+                            <h3>Learn real reliability engineering</h3>
+                            <p>Classroom code rarely fails; production code fails constantly. I set out to learn how engineers design for failure and made real progress: root-causing an 18-alert incident down to 3 meaningful alerts, designing per-hire failure isolation, and proving idempotency with re-run tests instead of assuming it.</p>
+                        </article>
+                        <article>
+                            <h3>Lead, not just build</h3>
+                            <p>As project lead on two tracked programs, I wrote seven project health updates with honest percentages, negotiated integration details with IT and HR stakeholders, and turned a PM's project plan into a dependency-wired ticket graph. Leading meant communicating as much as coding.</p>
+                        </article>
+                    </div>
+                    <p class="reflection-note">Looking back, I grew most in reliability engineering and stakeholder communication, skills I could only have developed on a system real people depend on. Next I want to learn how these same principles hold up at much larger scale.</p>
+                </section>
+
+                <section class="report-section" aria-label="Featured Summer 2026 projects">
+                    <div class="section-head">
+                        <span class="num">03</span>
+                        <h2>What I Built</h2>
+                    </div>
+
+                    <article class="feature-project">
+                        <div class="feature-head">
+                            <p class="feature-kicker">Project 01 · Primary Assignment</p>
+                            <p class="feature-role">Project lead</p>
+                        </div>
+                        <h3>Automated Employee Onboarding</h3>
+                        <p class="feature-oneliner">An orchestration platform that replaces a paid SaaS product with software TextNow owns. It takes a new hire from the moment HR signs them to a fully provisioned employee: HRIS record, service-desk ticket, Active Directory account, access groups, manager assignment, welcome communications, and an audit trail for every step.</p>
+                        <div class="feature-grid">
+                            <div>
+                                <h4>What I built</h4>
+                                <ul>
+                                    <li><strong>The IT pipeline:</strong> detects new hires in Dayforce (the HR system), opens a service-desk ticket, and creates the employee's Active Directory account with collision-safe username and email generation that handles duplicate and non-ASCII names. It then looks up the access groups for the hire's department and provisions them idempotently, so re-running the pipeline never applies anything twice.</li>
+                                    <li><strong>The P&amp;C pipeline:</strong> takes signed offers from Greenhouse (the recruiting system) and creates the hire record in Dayforce. We designed this step with a dedup guard to ensure the same hire is never created twice. The pipeline then sets up the employee's file storage, sends the new-hire welcome emails and Slack messages, notifies the manager, and routes the signed offer documents.</li>
+                                    <li><strong>Reliability engineering:</strong> root-caused a live incident where retry logic multiplied 6 expected alerts into 18, and drove alert noise per failing hire from 18 down to 3; designed per-hire failure isolation so one bad record never kills the batch; wired all 20 workflows to a shared error handler with stage-by-stage progress narration on each ticket.</li>
+                                    <li><strong>Security engineering:</strong> sensitive personal data flows through an isolated path with execution logging disabled, and we verified by testing that nothing leaks. Access is granted on a least-privilege basis by employment type, every credential went through a production-readiness audit, and when an elevated API credential began exposing Social Security numbers we escalated it right away.</li>
+                                    <li><strong>Documentation for handoff:</strong> an operational runbook, a maintenance guide organized by scenario, and a deep-dive for each subsystem, so the IT and HR teams can operate the system on their own.</li>
+                                </ul>
+                            </div>
+                            <div class="feature-side">
+                                <div class="chips" aria-label="Automated Onboarding stack">
+                                    <span>n8n</span>
+                                    <span>Dayforce REST</span>
+                                    <span>Active Directory / LDAPS</span>
+                                    <span>Jira Service Management</span>
+                                    <span>Jira Assets</span>
+                                    <span>Microsoft Graph</span>
+                                    <span>Greenhouse Harvest</span>
+                                    <span>Slack</span>
+                                    <span>OpenSpec</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="feature-impact"><strong>Why it matters:</strong> onboarding a new employee used to depend on a paid external tool plus manual IT work, with no unified audit trail. The platform we built is owned in-house, narrates every step on a ticket a human can read, and fails safely: a diverted hire raises an alert instead of a half-provisioned account. A teammate summed up the ambition best: "once your onboarding flow is done, we can technically automate any IT ticket."</p>
+                    </article>
+
+                    <article class="feature-project">
+                        <div class="feature-head">
+                            <p class="feature-kicker">Project 02 · Platform Engineering</p>
+                            <p class="feature-role">Creator &amp; maintainer</p>
+                        </div>
+                        <h3>Streamlit-on-Snowflake CI/CD Platform</h3>
+                        <p class="feature-oneliner">Carried from the end of my winter term into early summer: I generalized my single dashboard project into TextNow's shared monorepo and deployment pipeline for Streamlit apps on Snowflake. Other teams can now deploy their own apps through it without help.</p>
+                        <div class="feature-grid">
+                            <div>
+                                <h4>What I built</h4>
+                                <ul>
+                                    <li>A monorepo contract (each app declares its own deploy config) with lint, syntax, and config validation on every push, and a step-by-step onboarding guide with copy-paste templates so teams can add an app without asking for help.</li>
+                                    <li>A two-workflow GitHub Actions design: a dispatcher that validates inputs and fails fast on missing config, and a reusable deploy workflow that injects environment-specific settings at deploy time and ships via the Snowflake CLI.</li>
+                                    <li>Release gating: separate staging and production environments, a required reviewer approval before anything deploys to production, environment-scoped secrets, and concurrency controls so deploys can't overlap.</li>
+                                </ul>
+                            </div>
+                            <div class="feature-side">
+                                <div class="chips" aria-label="CI/CD platform stack">
+                                    <span>GitHub Actions</span>
+                                    <span>Snowflake CLI</span>
+                                    <span>GitHub Environments</span>
+                                    <span>Ruff</span>
+                                    <span>Python</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="feature-impact"><strong>Why it matters:</strong> the real test of a platform is whether someone else can use it without you. Another engineer deployed a much larger analytics app through the pipeline without modifying it, and the repo has since become a maintained internal asset with additional security hardening added by the reliability team.</p>
+                    </article>
+                </section>
+
+                <section class="report-section prose">
+                    <div class="section-head">
+                        <span class="num">04</span>
+                        <h2>Conclusion</h2>
+                    </div>
+                    <p>The single idea that ties this term together is that <strong>shipping is the beginning, not the end</strong>. Every system I touched this summer was judged by how it behaves when things go wrong: does a failed hire divert cleanly, does a re-run stay idempotent, can the next person operate it from the docs alone? Learning to ask and answer those questions is the difference between code that works in a demo and software an organization can rely on.</p>
+                    <p>If someone were to summarize this report, I would want them to say: he was given real responsibility, treated reliability and honesty as engineering requirements rather than virtues, and left behind systems that other people can run without him.</p>
+                </section>
+
             </div>
-            <p class="reflection-note">Looking back, I was most successful in improving my automation, communication, and product-thinking skills. I still want to keep growing in system design, especially around how larger services are maintained after the first version is built.</p>
-        </section>
-
-        <section class="report-section">
-            <h2>Job Description</h2>
-            <p>As a Full-Stack Software Developer Co-op, my work involved building and improving internal software systems. Some tasks required technical implementation, while others required research, planning, documentation, and collaboration with people outside of engineering.</p>
-            <p>The most interesting part of the role was that the projects were practical and cross-functional. I needed programming and data skills, but I also had to ask good questions, understand user needs, and explain trade-offs. Some of these skills came from school, especially problem solving and software design, while many were strengthened on the job through real tools, real constraints, and real stakeholders.</p>
-        </section>
-
-        <section class="project-report-grid" aria-label="Featured TextNow projects">
-            <article class="report-project-card">
-                <div class="project-kicker">Project 01</div>
-                <h2>AI Tools Feedback Pipeline</h2>
-                <p class="project-one-liner">Built a feedback system that helped teams see how internal AI tools were working for the people using them.</p>
-
-                <div class="project-detail">
-                    <h3>What I Built</h3>
-                    <ul>
-                        <li>Added simple feedback forms directly into internal tools so users could share their experience in the moment.</li>
-                        <li>Created an automated flow that collected each response and stored it in one organized place.</li>
-                        <li>Built a live dashboard so stakeholders could quickly review trends, issues, and improvement opportunities.</li>
-                    </ul>
-                </div>
-
-                <div class="stack-list" aria-label="AI Tools Feedback Pipeline stack">
-                    <span>n8n</span>
-                    <span>Snowflake</span>
-                    <span>Streamlit</span>
-                    <span>Embedded HTML forms</span>
-                </div>
-
-                <p class="impact-note"><strong>Why it matters:</strong> The project gave the team one clear place to understand what was working, what needed attention, and how users actually felt about the tools.</p>
-            </article>
-
-            <article class="report-project-card">
-                <div class="project-kicker">Project 02</div>
-                <h2>IT Automated Onboarding</h2>
-                <p class="project-one-liner">Worked on a new employee onboarding system that reduces repetitive setup work and helps IT track each new hire from start to finish.</p>
-
-                <div class="project-detail">
-                    <h3>What I Built</h3>
-                    <ul>
-                        <li>Created the first phase of an automated process that checks for new hires and identifies who needs onboarding.</li>
-                        <li>Set up automatic service desk tickets so IT has a clear record of each onboarding request.</li>
-                        <li>Mapped employee information from the HR system to the fields needed for account creation.</li>
-                    </ul>
-                </div>
-
-                <div class="stack-list" aria-label="IT Automated Onboarding stack">
-                    <span>n8n</span>
-                    <span>Dayforce API</span>
-                    <span>Jira Service Management API</span>
-                    <span>Active Directory / LDAP</span>
-                    <span>AWS</span>
-                    <span>Okta</span>
-                    <span>Microsoft Graph API</span>
-                </div>
-
-                <p class="impact-note"><strong>Why it matters:</strong> The project helps reduce manual handoffs, lowers the chance of missed setup steps, and gives IT a clearer audit trail for every new employee.</p>
-            </article>
-
-            <article class="report-project-card">
-                <div class="project-kicker">Project 03</div>
-                <h2>Innovation Challenge - Smart Milestone Rewards</h2>
-                <p class="project-one-liner">Contributed to a team pitch for a loyalty program that rewards long-term users and creates a more natural path toward paid features.</p>
-
-                <div class="project-detail">
-                    <h3>What I Built</h3>
-                    <ul>
-                        <li>Reviewed 22,993 customer feedback records to understand what users liked, disliked, and wanted from paid features.</li>
-                        <li>Helped design a milestone reward path that gives users helpful in-app rewards as they continue using the product.</li>
-                        <li>Outlined how the idea could be supported by a reliable software service and customer data.</li>
-                        <li>Created a polished presentation deck using TextNow's brand style for the final pitch.</li>
-                    </ul>
-                </div>
-
-                <div class="stack-list" aria-label="Innovation Challenge stack">
-                    <span>Enterpret</span>
-                    <span>Cypher</span>
-                    <span>Go</span>
-                    <span>gRPC</span>
-                    <span>Snowflake</span>
-                    <span>Figma</span>
-                    <span>Gamma</span>
-                </div>
-
-                <p class="impact-note"><strong>Why it matters:</strong> The pitch showed that many users already saw value in the product, and that a better reward experience could make paid options feel more timely and useful.</p>
-            </article>
-        </section>
-
-        <section class="report-section">
-            <h2>Conclusion</h2>
-            <p>This work term showed me how software engineering creates value beyond writing code. The strongest projects started with a real need: a team needed clearer feedback, IT needed a more reliable onboarding process, and product stakeholders needed a better way to understand customer motivation. My role was to help turn those needs into systems, plans, and explanations that could be used by other people.</p>
-            <p>If someone were to summarize this report, I would want them to say that I learned how to connect technical work with human problems. I became more confident building practical tools, communicating with stakeholders, and thinking about software as part of a larger organization.</p>
-        </section>
-
-        <section class="report-section acknowledgement-section">
-            <h2>Acknowledgments</h2>
-            <p>Thank you to the teams and mentors at TextNow who supported my learning during the term, answered questions, reviewed my work, and gave me opportunities to contribute to meaningful projects. I also appreciate the University of Guelph co-op program for helping make this experience possible.</p>
-        </section>
         </article>
 
         <!-- ============================================================
-             NEW WORK TERM REPORT SKELETON
-             Replace the placeholder copy below, then update the id,
-             aria-labelledby, and term name to match the real term.
+             WINTER 2026 REPORT
              ============================================================ -->
-        <article class="term-report" id="summer-2026" aria-labelledby="summer-2026-title">
-        <section class="work-term-hero">
-            <div>
-                <p class="eyebrow">Summer 2026 Co-op Term</p>
-                <h2 id="summer-2026-title">Summer 2026 Work Term Report</h2>
-                <p class="hero-summary">One or two sentences describing the term: where you worked, what kind of problems you took on, and the throughline that connects the projects.</p>
+        <article class="term-report" id="winter-2026" aria-labelledby="winter-2026-title">
+
+            <section class="report-hero">
+                <div>
+                    <p class="eyebrow">W26 Co-op Term</p>
+                    <h2 class="report-title" id="winter-2026-title">Winter 2026 Work Term Report</h2>
+                    <p class="lede">This report reflects on my Winter 2026 co-op term at TextNow, where I helped build internal tools, improve employee onboarding, and explore product ideas shaped by customer feedback.</p>
+                </div>
+                <dl class="term-meta" aria-label="Winter 2026 work term details">
+                    <div>
+                        <dt>Employer</dt>
+                        <dd>TextNow</dd>
+                    </div>
+                    <div>
+                        <dt>Role</dt>
+                        <dd>Full-Stack Software Developer Co-op</dd>
+                    </div>
+                    <div>
+                        <dt>Term</dt>
+                        <dd>Winter 2026</dd>
+                    </div>
+                    <div>
+                        <dt>Focus</dt>
+                        <dd>Internal tools, process automation, customer research, and product ideas</dd>
+                    </div>
+                </dl>
+            </section>
+
+            <div class="report-body">
+
+                <section class="report-section prose">
+                    <div class="section-head">
+                        <span class="num">01</span>
+                        <h2>Introduction</h2>
+                    </div>
+                    <p>My goal for this website is to give a clear picture of what I worked on, what I learned, and how the term helped me grow as a software engineering student. I worked at TextNow during the Winter 2026 co-op term as a Full-Stack Software Developer Co-op, contributing to projects that supported internal teams and customer-focused product thinking.</p>
+                    <figure class="report-figure">
+                        <img src="coding.jpg" alt="Laptop workspace representing software development work">
+                        <figcaption>Much of my term focused on turning messy operational problems into clearer tools and workflows.</figcaption>
+                    </figure>
+                </section>
+
+                <section class="report-section prose">
+                    <div class="section-head">
+                        <span class="num">02</span>
+                        <h2>About TextNow</h2>
+                    </div>
+                    <p>TextNow is a communications company best known for helping people call and text through an app-based phone service. The company works in an area of computing that connects mobile apps, cloud services, data systems, internal platforms, and customer experience. During my term, I saw how software supports both the product users see and the internal systems employees rely on every day.</p>
+                    <p>What stood out to me was the range of problems a software team can touch inside one company. Some work was close to the customer experience, while other work focused on making internal processes faster, clearer, and easier to manage.</p>
+                </section>
+
+                <section class="report-section">
+                    <div class="section-head">
+                        <span class="num">03</span>
+                        <h2>Goals and Learning Outcomes</h2>
+                    </div>
+                    <div class="goals-grid">
+                        <article>
+                            <h3>Build Useful Internal Tools</h3>
+                            <p>I wanted to improve at building software for real teams, not just for a class assignment. This goal was met through projects where I had to understand how employees worked, what information they needed, and how to make tools fit into existing processes.</p>
+                        </article>
+                        <article>
+                            <h3>Grow My Automation Skills</h3>
+                            <p>I wanted to learn how companies reduce repetitive work through automation. I made progress on this by working on feedback collection and onboarding workflows that moved information between systems with less manual effort.</p>
+                        </article>
+                        <article>
+                            <h3>Practice Clear Technical Communication</h3>
+                            <p>I wanted to get better at explaining technical work to people with different backgrounds. This goal became important when writing documentation, presenting product ideas, and turning project details into language stakeholders could understand.</p>
+                        </article>
+                        <article>
+                            <h3>Connect Software to Business Value</h3>
+                            <p>I wanted to understand how engineering decisions support business goals. The innovation challenge helped me see how customer feedback, product strategy, and implementation planning can come together in one proposal.</p>
+                        </article>
+                    </div>
+                    <p class="reflection-note">Looking back, I was most successful in improving my automation, communication, and product-thinking skills. I still want to keep growing in system design, especially around how larger services are maintained after the first version is built.</p>
+                </section>
+
+                <section class="report-section" aria-label="Featured Winter 2026 projects">
+                    <div class="section-head">
+                        <span class="num">04</span>
+                        <h2>What I Built</h2>
+                    </div>
+
+                    <article class="feature-project">
+                        <div class="feature-head">
+                            <p class="feature-kicker">Project 01</p>
+                        </div>
+                        <h3>AI Tools Feedback Pipeline</h3>
+                        <p class="feature-oneliner">Built a feedback system that helped teams see how internal AI tools were working for the people using them.</p>
+                        <div class="feature-grid">
+                            <div>
+                                <h4>What I Built</h4>
+                                <ul>
+                                    <li>Added simple feedback forms directly into internal tools so users could share their experience in the moment.</li>
+                                    <li>Created an automated flow that collected each response and stored it in one organized place.</li>
+                                    <li>Built a live dashboard so stakeholders could quickly review trends, issues, and improvement opportunities.</li>
+                                </ul>
+                            </div>
+                            <div class="feature-side">
+                                <div class="chips" aria-label="AI Tools Feedback Pipeline stack">
+                                    <span>n8n</span>
+                                    <span>Snowflake</span>
+                                    <span>Streamlit</span>
+                                    <span>Embedded HTML forms</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="feature-impact"><strong>Why it matters:</strong> The project gave the team one clear place to understand what was working, what needed attention, and how users actually felt about the tools.</p>
+                    </article>
+
+                    <article class="feature-project">
+                        <div class="feature-head">
+                            <p class="feature-kicker">Project 02</p>
+                        </div>
+                        <h3>IT Automated Onboarding</h3>
+                        <p class="feature-oneliner">Worked on a new employee onboarding system that reduces repetitive setup work and helps IT track each new hire from start to finish.</p>
+                        <div class="feature-grid">
+                            <div>
+                                <h4>What I Built</h4>
+                                <ul>
+                                    <li>Created the first phase of an automated process that checks for new hires and identifies who needs onboarding.</li>
+                                    <li>Set up automatic service desk tickets so IT has a clear record of each onboarding request.</li>
+                                    <li>Mapped employee information from the HR system to the fields needed for account creation.</li>
+                                </ul>
+                            </div>
+                            <div class="feature-side">
+                                <div class="chips" aria-label="IT Automated Onboarding stack">
+                                    <span>n8n</span>
+                                    <span>Dayforce API</span>
+                                    <span>Jira Service Management API</span>
+                                    <span>Active Directory / LDAP</span>
+                                    <span>AWS</span>
+                                    <span>Okta</span>
+                                    <span>Microsoft Graph API</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="feature-impact"><strong>Why it matters:</strong> The project helps reduce manual handoffs, lowers the chance of missed setup steps, and gives IT a clearer audit trail for every new employee.</p>
+                    </article>
+
+                    <article class="feature-project">
+                        <div class="feature-head">
+                            <p class="feature-kicker">Project 03</p>
+                        </div>
+                        <h3>Innovation Challenge - Smart Milestone Rewards</h3>
+                        <p class="feature-oneliner">Contributed to a team pitch for a loyalty program that rewards long-term users and creates a more natural path toward paid features.</p>
+                        <div class="feature-grid">
+                            <div>
+                                <h4>What I Built</h4>
+                                <ul>
+                                    <li>Reviewed 22,993 customer feedback records to understand what users liked, disliked, and wanted from paid features.</li>
+                                    <li>Helped design a milestone reward path that gives users helpful in-app rewards as they continue using the product.</li>
+                                    <li>Outlined how the idea could be supported by a reliable software service and customer data.</li>
+                                    <li>Created a polished presentation deck using TextNow's brand style for the final pitch.</li>
+                                </ul>
+                            </div>
+                            <div class="feature-side">
+                                <div class="chips" aria-label="Innovation Challenge stack">
+                                    <span>Enterpret</span>
+                                    <span>Cypher</span>
+                                    <span>Go</span>
+                                    <span>gRPC</span>
+                                    <span>Snowflake</span>
+                                    <span>Figma</span>
+                                    <span>Gamma</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="feature-impact"><strong>Why it matters:</strong> The pitch showed that many users already saw value in the product, and that a better reward experience could make paid options feel more timely and useful.</p>
+                    </article>
+                </section>
+
+                <section class="report-section prose">
+                    <div class="section-head">
+                        <span class="num">05</span>
+                        <h2>Conclusion</h2>
+                    </div>
+                    <p>This work term showed me how software engineering creates value beyond writing code. The strongest projects started with a real need: a team needed clearer feedback, IT needed a more reliable onboarding process, and product stakeholders needed a better way to understand customer motivation. My role was to help turn those needs into systems, plans, and explanations that could be used by other people.</p>
+                    <p>If someone were to summarize this report, I would want them to say that I learned how to connect technical work with human problems. I became more confident building practical tools, communicating with stakeholders, and thinking about software as part of a larger organization.</p>
+                </section>
+
             </div>
-            <dl class="term-meta" aria-label="Summer 2026 work term details">
-                <div>
-                    <dt>Employer</dt>
-                    <dd>Employer name</dd>
-                </div>
-                <div>
-                    <dt>Role</dt>
-                    <dd>Role title</dd>
-                </div>
-                <div>
-                    <dt>Term</dt>
-                    <dd>Summer 2026</dd>
-                </div>
-                <div>
-                    <dt>Focus</dt>
-                    <dd>Three or four focus areas, comma separated</dd>
-                </div>
-            </dl>
-        </section>
-
-        <section class="report-intro">
-            <h2>Introduction</h2>
-            <p>Set up the report: what you set out to do this term, what the reader should take away, and how this term built on the previous one.</p>
-            <figure class="report-image">
-                <img src="coding.jpg" alt="Placeholder image for the Summer 2026 work term">
-                <figcaption>Replace this image and caption with something representative of the term.</figcaption>
-            </figure>
-        </section>
-
-        <section class="report-section">
-            <h2>About the Employer</h2>
-            <p>Describe the company: what it does, the area of computing it works in, and what surprised you about how software is built and used there.</p>
-            <p>Add a second paragraph on the range of problems the team touches, and where your work fit inside that.</p>
-        </section>
-
-        <section class="report-section">
-            <h2>Goals and Learning Outcomes</h2>
-            <div class="goals-grid">
-                <article>
-                    <h3>Goal one</h3>
-                    <p>What you wanted to learn, and how the term did or did not move you toward it.</p>
-                </article>
-                <article>
-                    <h3>Goal two</h3>
-                    <p>What you wanted to learn, and how the term did or did not move you toward it.</p>
-                </article>
-                <article>
-                    <h3>Goal three</h3>
-                    <p>What you wanted to learn, and how the term did or did not move you toward it.</p>
-                </article>
-                <article>
-                    <h3>Goal four</h3>
-                    <p>What you wanted to learn, and how the term did or did not move you toward it.</p>
-                </article>
-            </div>
-            <p class="reflection-note">Close with an honest reflection: where you made the most progress, and what you still want to get better at.</p>
-        </section>
-
-        <section class="report-section">
-            <h2>Job Description</h2>
-            <p>Describe the day to day of the role: the kinds of tasks you owned, who you worked with, and what the work actually looked like.</p>
-            <p>Add a paragraph on which skills came from coursework and which ones you picked up on the job.</p>
-        </section>
-
-        <section class="project-report-grid" aria-label="Featured Summer 2026 projects">
-            <article class="report-project-card">
-                <div class="project-kicker">Project 01</div>
-                <h2>Project name</h2>
-                <p class="project-one-liner">One sentence on what the project was and who it was for.</p>
-
-                <div class="project-detail">
-                    <h3>What I Built</h3>
-                    <ul>
-                        <li>First concrete thing you built or shipped.</li>
-                        <li>Second concrete thing you built or shipped.</li>
-                        <li>Third concrete thing you built or shipped.</li>
-                    </ul>
-                </div>
-
-                <div class="stack-list" aria-label="Project 01 stack">
-                    <span>Tool</span>
-                    <span>Tool</span>
-                    <span>Tool</span>
-                </div>
-
-                <p class="impact-note"><strong>Why it matters:</strong> The outcome for the team or the user, in plain language.</p>
-            </article>
-
-            <article class="report-project-card">
-                <div class="project-kicker">Project 02</div>
-                <h2>Project name</h2>
-                <p class="project-one-liner">One sentence on what the project was and who it was for.</p>
-
-                <div class="project-detail">
-                    <h3>What I Built</h3>
-                    <ul>
-                        <li>First concrete thing you built or shipped.</li>
-                        <li>Second concrete thing you built or shipped.</li>
-                        <li>Third concrete thing you built or shipped.</li>
-                    </ul>
-                </div>
-
-                <div class="stack-list" aria-label="Project 02 stack">
-                    <span>Tool</span>
-                    <span>Tool</span>
-                    <span>Tool</span>
-                </div>
-
-                <p class="impact-note"><strong>Why it matters:</strong> The outcome for the team or the user, in plain language.</p>
-            </article>
-
-            <article class="report-project-card">
-                <div class="project-kicker">Project 03</div>
-                <h2>Project name</h2>
-                <p class="project-one-liner">One sentence on what the project was and who it was for.</p>
-
-                <div class="project-detail">
-                    <h3>What I Built</h3>
-                    <ul>
-                        <li>First concrete thing you built or shipped.</li>
-                        <li>Second concrete thing you built or shipped.</li>
-                        <li>Third concrete thing you built or shipped.</li>
-                    </ul>
-                </div>
-
-                <div class="stack-list" aria-label="Project 03 stack">
-                    <span>Tool</span>
-                    <span>Tool</span>
-                    <span>Tool</span>
-                </div>
-
-                <p class="impact-note"><strong>Why it matters:</strong> The outcome for the team or the user, in plain language.</p>
-            </article>
-        </section>
-
-        <section class="report-section">
-            <h2>Conclusion</h2>
-            <p>Tie the projects back to a single idea about what the term taught you.</p>
-            <p>End with how you would want someone to summarize this report.</p>
-        </section>
-
-        <section class="report-section acknowledgement-section">
-            <h2>Acknowledgments</h2>
-            <p>Thank the mentors, teams, and program that supported the term.</p>
-        </section>
         </article>
+
     </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <p class="footer-title">Thanks for <em>reading.</em></p>
+                <p class="footer-note">Questions about a report or a project? I'm happy to talk through any of it.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/asiddiqi04" target="_blank" rel="noopener noreferrer">github.com/asiddiqi04</a>
+                <a href="https://www.linkedin.com/in/adil-siddiqi-20789b2a9/" target="_blank" rel="noopener noreferrer">linkedin.com/in/adil-siddiqi</a>
+            </div>        </div>
+    </footer>
 
 </body>
 </html>
