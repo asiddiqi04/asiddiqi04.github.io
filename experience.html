@@ -2,127 +2,124 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Experience</title>
-    <link rel="stylesheet" href="styles.css?v=20260214">
+    <meta name="description" content="Work experience of Adil Siddiqi: TextNow and Lafarge Canada. Automation, data systems, and internal platforms.">
+    <title>Experience | Adil Siddiqi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,600;0,700;0,800;0,900;1,600;1,800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20260819">
 </head>
 <body class="experience-page">
-    
-    <div id = "header">
-        <header>
-            <div class="logo"><a href="index.html">Adil Siddiqi</a></div>
-            
-            <nav>
-                <ul class="nav_links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="work-term-reports.html">Work Term Reports</a></li>
-                    <li><a href="education.html">Education</a></li>
-                </ul>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">Adil<span> Siddiqi</span></a>
+            <nav class="site-nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="experience.html" aria-current="page">Experience</a>
+                <a href="projects.html">Projects</a>
+                <a href="work-term-reports.html">Work Term Reports</a>
+                <a href="education.html">Education</a>
             </nav>
-
-            <div class="nav_buttons">
-                <a href="https://github.com/asiddiqi04" target="_blank" rel="noopener noreferrer"><button>GitHub</button></a>
-                <a href="https://www.linkedin.com/in/adil-siddiqi-20789b2a9/" target="_blank" rel="noopener noreferrer"><button>LinkedIn</button></a>
+            <div class="header-actions">
+                <a class="icon-link" href="https://github.com/asiddiqi04" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="icon-link" href="https://www.linkedin.com/in/adil-siddiqi-20789b2a9/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
-        </header>
-    </div>
-
-    <main id="experiencePage" class="page-shell">
-
-        <div class="bannerImage">
-            <img src="experience-banner.png" alt="Abstract technology banner">
         </div>
+    </header>
 
-        <div class="container experience-layout">
-            <section class="experience-summary">
-                <h2>Work Experience</h2>
-                <p>Software Engineering co-op focused on full-stack development, automation, and data systems that improve operational speed, reliability, and business decision-making.</p>
-            </section>
+    <main class="page-shell">
 
-            <section class="impact-grid" aria-label="Impact highlights">
-                <article class="impact-card">
-                    <h3>Cloud-Based</h3>
-                    <p>Carrier compliance platform deployed with automated expiry validation at Lafarge.</p>
-                </article>
-                <article class="impact-card">
-                    <h3>200%</h3>
-                    <p>Faster document processing through AI-powered ETL workflows.</p>
-                </article>
-                <article class="impact-card">
-                    <h3>80%</h3>
-                    <p>Reduction in manual audits via Apps Script compliance integrations.</p>
-                </article>
-                <article class="impact-card">
-                    <h3>2K+</h3>
-                    <p>Compliance records validated through SQL and automation pipelines.</p>
-                </article>
-            </section>
+        <section class="page-hero">
+            <p class="eyebrow">Experience</p>
+            <h1>Where I've worked</h1>
+            <p class="lede">Software engineering roles at TextNow and Lafarge Canada, focused on automation, data systems, and internal platforms.</p>
+        </section>
 
-            <section class="role-grid" aria-label="Roles and achievements">
-                <article class="role-card">
-                    <h3>Full-Stack Software Developer (CO-OP)</h3>
-                    <p class="role-company">TextNow <span>Waterloo, Ontario</span></p>
-                    <p class="role-dates">January 2026 - Present</p>
+        <section class="role-list" aria-label="Roles and achievements">
+            <article class="role-entry">
+                <div>
+                    <p class="role-when">Jan 2026 - Present</p>
+                    <p class="role-place"><strong>TextNow</strong>Waterloo, Ontario (AI &amp; Internal Tools)</p>
+                </div>
+                <div>
+                    <h3>Software Developer Co-op (two consecutive terms)</h3>
                     <ul>
-                        <li>Architected cross-platform AI feedback ingestion pipelines using n8n and JavaScript to capture real-time user sentiment from Slack and Jira bots.</li>
-                        <li>Implemented a secure Model Context Protocol (MCP) connection between local IDEs and automation platforms, reducing time-to-prototype for internal workflows.</li>
-                        <li>Implemented HMAC signature verification for webhook authentication to ensure secure and reliable service-to-service communication.</li>
-                        <li>Authored technical documentation and how-to guides in Confluence, enabling faster team adoption of new automation tooling.</li>
+                        <li>Led the build of TextNow's automated employee-onboarding platform, replacing a paid SaaS tool. Integrated 10+ enterprise systems (Dayforce, Active Directory over LDAPS, Jira Service Management, Microsoft Graph, Greenhouse, Slack) with idempotent, failure-isolated orchestration and full operational documentation for handoff.</li>
+                        <li>Designed and shipped an end-to-end AI-tools feedback system (n8n → S3 → Snowflake → Streamlit dashboard) that ran unattended in production for months after handoff, collecting 3,100+ feedback events from three internal bots on Slack and Jira.</li>
+                        <li>Created the team's Streamlit-on-Snowflake CI/CD monorepo (reusable GitHub Actions workflows, stage/prod release gating) adopted unchanged by another engineer for a ~12,000-line app.</li>
+                        <li>Helped establish the team's AI-agent engineering practices: MCP server rollout, spec-driven development with OpenSpec, and a reusable project template. Presented at four company-wide Demo Days.</li>
                     </ul>
-                </article>
+                </div>
+            </article>
 
-                <article class="role-card">
+            <article class="role-entry">
+                <div>
+                    <p class="role-when">Jan 2025 - Apr 2025</p>
+                    <p class="role-place"><strong>Lafarge Canada Inc.</strong>Mississauga, Ontario</p>
+                </div>
+                <div>
                     <h3>Junior Web Developer (Part-Time)</h3>
-                    <p class="role-company">Lafarge Canada Inc. <span>Mississauga, Ontario</span></p>
-                    <p class="role-dates">January 2025 - April 2025</p>
                     <ul>
                         <li>Designed and deployed a cloud-based carrier compliance platform that improved compliance tracking through automated document expiry validation.</li>
-                        <li>Implemented SQL validation pipelines and Google Apps Script automations across 2,000+ compliance records, improving system reliability and data accuracy.</li>
+                        <li>Implemented SQL validation pipelines and Google Apps Script automations for 2,000+ compliance records, improving system reliability and data accuracy.</li>
                         <li>Collaborated with logistics and operations stakeholders under Agile workflows to gather requirements and deliver iterative backend and frontend updates.</li>
                         <li>Improved compliance visibility and reduced follow-up effort with automated reminders and status tracking workflows.</li>
                     </ul>
-                </article>
+                </div>
+            </article>
 
-                <article class="role-card" id="WT2">
-                    <h3>Business Intelligence Analyst (CO-OP)</h3>
-                    <p class="role-company">Lafarge Canada Inc. <span>Mississauga, Ontario</span></p>
-                    <p class="role-dates">May 2024 - December 2024</p>
+            <article class="role-entry" id="WT2">
+                <div>
+                    <p class="role-when">May 2024 - Dec 2024</p>
+                    <p class="role-place"><strong>Lafarge Canada Inc.</strong>Mississauga, Ontario</p>
+                </div>
+                <div>
+                    <h3>Business Intelligence Analyst (Co-op)</h3>
                     <ul>
-                        <li>Developed an AI-powered ETL pipeline in Python using Gemini API to process thousands of unstructured reports, increasing processing speed by 200%.</li>
-                        <li>Built SQL pipelines and backend scripts to visualize adoption, data velocity, and usage metrics across tools using Looker Studio and Power BI.</li>
+                        <li>Developed an AI-powered ETL pipeline in Python using the Gemini API to process thousands of unstructured reports, increasing processing speed by 200%.</li>
+                        <li>Built SQL pipelines and backend scripts to visualize adoption, data velocity, and usage metrics for internal tools using Looker Studio and Power BI.</li>
                         <li>Integrated Apps Script automations with compliance systems, reducing manual audits by 80% and improving real-time operational accuracy.</li>
                         <li>Worked directly with on-site teams through visits to Dundas Quarry and the Toronto ITC lab to align tooling with real operational workflows.</li>
                     </ul>
-                </article>
-            </section>
-
-            <section class="skills-block" aria-label="Technical skills">
-                <h3>Technical Skills</h3>
-                <div class="skills-columns">
-                    <div class="skill-group">
-                        <h4>AI &amp; Automation</h4>
-                        <p>n8n, MCP, Slack API, Jira Automation, RAG Pipelines, Gemini API</p>
-                    </div>
-                    <div class="skill-group">
-                        <h4>Languages &amp; Scripting</h4>
-                        <p>Python, JavaScript/TypeScript, SQL, Bash/Shell, Java, C</p>
-                    </div>
-                    <div class="skill-group">
-                        <h4>Web Development</h4>
-                        <p>React.js, Node.js, FastAPI, HTML5/CSS3, RESTful APIs</p>
-                    </div>
-                    <div class="skill-group">
-                        <h4>DevOps &amp; Tools</h4>
-                        <p>Git/GitHub, Docker, Linux (CLI/SSH), Google Cloud Platform (GCP), AWS</p>
-                    </div>
                 </div>
-            </section>
-        </div>
+            </article>
+        </section>
+
+        <section class="skills-band" aria-label="Technical skills">
+            <div class="skill-group">
+                <h4>AI &amp; Automation</h4>
+                <p>n8n, MCP servers, OpenSpec, Claude Code, Slack &amp; Jira automation, RAG pipelines, Gemini API</p>
+            </div>
+            <div class="skill-group">
+                <h4>Data &amp; ML</h4>
+                <p>Snowflake, Snowpark, SQL, XGBoost, pandas, Streamlit, Altair/Plotly, Power BI, Looker Studio</p>
+            </div>
+            <div class="skill-group">
+                <h4>Languages &amp; Web</h4>
+                <p>Python, JavaScript/TypeScript, SQL, Ruby (Rails), Java, C, Bash, React, Node.js, FastAPI, HTML/CSS</p>
+            </div>
+            <div class="skill-group">
+                <h4>Platforms &amp; DevOps</h4>
+                <p>GitHub Actions, Git, Docker, Linux, AWS, GCP, Active Directory / LDAP, Microsoft Graph, REST APIs</p>
+            </div>
+        </section>
 
     </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <p class="footer-title">Let's build something <em>useful.</em></p>
+                <p class="footer-note">Open to new grad conversations. The fastest way to reach me is LinkedIn.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/asiddiqi04" target="_blank" rel="noopener noreferrer">github.com/asiddiqi04</a>
+                <a href="https://www.linkedin.com/in/adil-siddiqi-20789b2a9/" target="_blank" rel="noopener noreferrer">linkedin.com/in/adil-siddiqi</a>
+            </div>        </div>
+    </footer>
 
 </body>
 </html>

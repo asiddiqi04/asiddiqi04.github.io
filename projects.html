@@ -2,94 +2,113 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="styles.css?v=20260214">
+    <meta name="description" content="Personal projects by Adil Siddiqi.">
+    <title>Projects | Adil Siddiqi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,600;0,700;0,800;0,900;1,600;1,800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20260819">
 </head>
 <body class="projects-page">
 
-    <div id = "header">
-        <header>
-            
-            
-                <div class="logo"><a href="index.html">Adil Siddiqi</a></div>
-                
-                <nav>
-                    <ul class="nav_links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="experience.html">Experience</a></li>
-                        <li><a href="work-term-reports.html">Work Term Reports</a></li>
-                        <li><a href="education.html">Education</a></li>
-                    </ul>
-                </nav>
-    
-                
-                <div class="nav_buttons">
-                    <a href="https://github.com/asiddiqi04" target="_blank" rel="noopener noreferrer"><button>GitHub</button></a>
-                    <a href="https://www.linkedin.com/in/adil-siddiqi-20789b2a9/" target="_blank" rel="noopener noreferrer"><button>LinkedIn</button></a>
-                </div>
-                
-            
-            
-        </header>
-        </div>
-
-        <main class="page-shell">
-            <div class="container">
-              <h1>Projects</h1>
-              <p>A couple of things I’m proud of. Open‑source where possible, always learning.</p>
-        
-              <!-- Project 1: GreenScore -->
-              <section class="project-card">
-                <h2>GreenScore <span class="dates">— Hackathon Project</span></h2>
-                <a class="image-button" href="#" target="_blank" rel="noopener">
-                  <img src="BIAnalyst.webp" alt="GreenScore app screenshot placeholder" />
-                  <span class="hover-text">Open Demo / Case Study</span>
-                </a>
-                <p>
-                  Barcode scanner + search that estimates ethical & sustainability scores for consumer products using a RAG pipeline and AI‑assisted scoring. Built with friends during a hackathon.
-                </p>
-                <ul>
-                  <li>React frontend with modern UI + Tailwind; FastAPI backend.</li>
-                  <li>Data sources: UPCItemDB & Open Food Facts; MongoDB persistence.</li>
-                  <li>AI: Gemini for score rationales; vector search for retrieval.</li>
-                  <li>Features: scan/search history, favourites, and an in‑app AI helper.</li>
-                </ul>
-                <div class="nav_buttons project-actions">
-                  <a href="#" target="_blank" rel="noopener"><button>Live Demo</button></a>
-                  <a href="https://github.com/asiddiqi04" target="_blank" rel="noopener"><button>Source</button></a>
-                </div>
-              </section>
-        
-              <!-- Project 2: ShadowBoxer (WIP) -->
-              <section class="project-card">
-                <h2>ShadowBoxer (WIP) <span class="dates">— Personal Fitness App</span></h2>
-                <a class="image-button" href="#" target="_blank" rel="noopener">
-                  <img src="truck.webp" alt="ShadowBoxer app screenshot placeholder" />
-                  <span class="hover-text">Try Prototype</span>
-                </a>
-                <p>
-                  Personal fitness web app that detects punches and tracks combos using webcam pose estimation. Building timed rounds, scoring, and gamified workouts next.
-                </p>
-                <ul>
-                  <li>MoveNet pose detection with TensorFlow.js; real‑time canvas overlay.</li>
-                  <li>Jab detection + counter implemented; combo logic in development.</li>
-                  <li>Responsive UI with Tailwind; Vite build for fast iteration.</li>
-                  <li>Planned: streaks, leaderboards, and coach‑style feedback.</li>
-                </ul>
-                <div class="nav_buttons project-actions">
-                  <a href="#" target="_blank" rel="noopener"><button>Prototype</button></a>
-                  <a href="https://github.com/asiddiqi04" target="_blank" rel="noopener"><button>Source</button></a>
-                </div>
-              </section>
-        
-              <section id="greenscore-notes">
-                <h3>GreenScore — Notes</h3>
-                <p>Architecture diagram, retrieval strategy, and evaluation benchmarks coming soon.</p>
-              </section>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">Adil<span> Siddiqi</span></a>
+            <nav class="site-nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="experience.html">Experience</a>
+                <a href="projects.html" aria-current="page">Projects</a>
+                <a href="work-term-reports.html">Work Term Reports</a>
+                <a href="education.html">Education</a>
+            </nav>
+            <div class="header-actions">
+                <a class="icon-link" href="https://github.com/asiddiqi04" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="icon-link" href="https://www.linkedin.com/in/adil-siddiqi-20789b2a9/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
-          </main>
+        </div>
+    </header>
+
+    <main class="page-shell">
+
+        <section class="page-hero">
+            <p class="eyebrow">Projects</p>
+            <h1>Things I've built for fun</h1>
+            <p class="lede">A couple of things I built outside of work. For production work, see my <a href="work-term-reports.html" style="color:var(--accent)">work term reports</a>.</p>
+        </section>
+
+        <article class="project-entry">
+            <div>
+                <p class="project-tag">Hackathon Project</p>
+                <h2>GreenScore</h2>
+                <div class="prose">
+                    <p>Barcode scanner + search that estimates ethical and sustainability scores for consumer products using a RAG pipeline and AI-assisted scoring. Built with friends during a hackathon.</p>
+                    <ul>
+                        <li>React frontend with modern UI + Tailwind; FastAPI backend.</li>
+                        <li>Data sources: UPCItemDB &amp; Open Food Facts; MongoDB persistence.</li>
+                        <li>AI: Gemini for score rationales; vector search for retrieval.</li>
+                        <li>Features: scan/search history, favourites, and an in-app AI helper.</li>
+                    </ul>
+                </div>
+                <div class="chips">
+                    <span>React</span>
+                    <span>Tailwind</span>
+                    <span>FastAPI</span>
+                    <span>MongoDB</span>
+                    <span>Gemini</span>
+                </div>
+                <div class="project-actions">
+                    <a class="btn ghost" href="https://github.com/asiddiqi04" target="_blank" rel="noopener noreferrer">Source</a>
+                </div>
+            </div>
+            <div class="project-media">
+                <img src="BIAnalyst.webp" alt="GreenScore app screenshot placeholder">
+            </div>
+        </article>
+
+        <article class="project-entry">
+            <div>
+                <p class="project-tag">Personal Fitness App · Work in Progress</p>
+                <h2>ShadowBoxer</h2>
+                <div class="prose">
+                    <p>Personal fitness web app that detects punches and tracks combos using webcam pose estimation. Building timed rounds, scoring, and gamified workouts next.</p>
+                    <ul>
+                        <li>MoveNet pose detection with TensorFlow.js; real-time canvas overlay.</li>
+                        <li>Jab detection + counter implemented; combo logic in development.</li>
+                        <li>Responsive UI with Tailwind; Vite build for fast iteration.</li>
+                        <li>Planned: streaks, leaderboards, and coach-style feedback.</li>
+                    </ul>
+                </div>
+                <div class="chips">
+                    <span>TensorFlow.js</span>
+                    <span>MoveNet</span>
+                    <span>Canvas</span>
+                    <span>Tailwind</span>
+                    <span>Vite</span>
+                </div>
+                <div class="project-actions">
+                    <a class="btn ghost" href="https://github.com/asiddiqi04" target="_blank" rel="noopener noreferrer">Source</a>
+                </div>
+            </div>
+            <div class="project-media">
+                <img src="coding.jpg" alt="ShadowBoxer app screenshot placeholder">
+            </div>
+        </article>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <p class="footer-title">Let's build something <em>useful.</em></p>
+                <p class="footer-note">Open to new grad conversations. The fastest way to reach me is LinkedIn.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/asiddiqi04" target="_blank" rel="noopener noreferrer">github.com/asiddiqi04</a>
+                <a href="https://www.linkedin.com/in/adil-siddiqi-20789b2a9/" target="_blank" rel="noopener noreferrer">linkedin.com/in/adil-siddiqi</a>
+            </div>        </div>
+    </footer>
+
 </body>
 </html>
